@@ -6,7 +6,7 @@ export const colors = {
   black: '#000000',
   darkGray: '#333333',
   gray: '#777777',
-  lightGray: '#CCCCCC',
+  lightGray: '#f6f6f6',
   white: '#FFFFFF',
 };
 
@@ -31,6 +31,7 @@ export const typography = {
     bold: '700',
   } as const,
 };
+
 
 export const spacing = {
   // Spacing values

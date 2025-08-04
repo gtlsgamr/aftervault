@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "email": "user@example.com",
+      "phone": "+1234567890",
+      "displayName": "John Doe",
+      "avatarUrl": "https://randomuser.me/api/portraits/men/1.jpg",
+      "proUser": true,
+      "lastCheckInAt": "2023-10-15T08:30:00Z",
+      "checkInIntervalDays": 7,
+      "createdAt": "2023-01-01T00:00:00Z",
+      "updatedAt": "2023-10-15T08:30:00Z"
+    }
+  ],
+  "vaults": [
+    {
+      "id": "vault1",
+      "ownerId": "user1",
+      "title": "My Vault",
+      "status": "active",
+      "createdAt": "2023-01-15T00:00:00Z",
+      "updatedAt": "2023-10-10T00:00:00Z"
+    }
+  ],
+  "vaultItems": [
+    {
+      "id": "item1",
+      "vaultId": "vault1",
+      "title": "Passport Information",
+      "type": "plaintext",
+      "content": "Passport Number: AB123456\nExpiry Date: 2028-05-20",
+      "releaseAfterDays": 30,
+      "expiresAfterDays": 365,
+      "deliveryStatus": "pending",
+      "deliveryAttempts": 0,
+      "createdAt": "2023-03-10T00:00:00Z",
+      "updatedAt": "2023-03-10T00:00:00Z"
+    },
+    {
+      "id": "item2",
+      "vaultId": "vault1",
+      "title": "Driver's License",
+      "type": "plaintext",
+      "content": "License Number: DL987654\nIssue Date: 2020-01-15\nExpiry Date: 2025-01-15",
+      "releaseAfterDays": 30,
+      "expiresAfterDays": 365,
+      "deliveryStatus": "pending",
+      "deliveryAttempts": 0,
+      "createdAt": "2023-04-05T00:00:00Z",
+      "updatedAt": "2023-04-05T00:00:00Z"
+    },
+    {
+      "id": "item3",
+      "vaultId": "vault1",
+      "title": "Bank Account Details",
+      "type": "encrypted",
+      "encryptedBlobUrl": "https://example.com/encrypted/bank-details",
+      "releaseAfterDays": 60,
+      "expiresAfterDays": 180,
+      "deliveryStatus": "pending",
+      "deliveryAttempts": 0,
+      "createdAt": "2023-05-20T00:00:00Z",
+      "updatedAt": "2023-05-20T00:00:00Z"
+    }
+  ],
+  "recipients": [
+    {
+      "id": "recipient1",
+      "ownerId": "user1",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "phone": "+1987654321",
+      "verified": true,
+      "contactPreference": "email",
+      "createdAt": "2023-02-01T00:00:00Z",
+      "updatedAt": "2023-02-01T00:00:00Z"
+    },
+    {
+      "id": "recipient2",
+      "ownerId": "user1",
+      "name": "Robert Johnson",
+      "email": "robert@example.com",
+      "phone": "+1122334455",
+      "verified": true,
+      "contactPreference": "both",
+      "createdAt": "2023-03-15T00:00:00Z",
+      "updatedAt": "2023-03-15T00:00:00Z"
+    }
+  ],
+  "itemRecipients": [
+    {
+      "id": "ir1",
+      "vaultItemId": "item1",
+      "recipientId": "recipient1",
+      "fallbackRecipientId": "recipient2",
+      "fallbackDelayDays": 14,
+      "deliveryPolicy": {
+        "retryLimit": 3,
+        "reminderIntervalDays": 7,
+        "autoExpireAfterDays": 90
+      },
+      "createdAt": "2023-03-12T00:00:00Z"
+    },
+    {
+      "id": "ir2",
+      "vaultItemId": "item2",
+      "recipientId": "recipient2",
+      "deliveryPolicy": {
+        "retryLimit": 5,
+        "reminderIntervalDays": 5,
+        "autoExpireAfterDays": 60
+      },
+      "createdAt": "2023-04-10T00:00:00Z"
+    }
+  ],
+  "triggers": [
+    {
+      "id": "trigger1",
+      "vaultId": "vault1",
+      "ownerId": "user1",
+      "triggeredAt": "2023-10-01T00:00:00Z",
+      "status": "pending",
+      "checkInMissedAt": "2023-10-01T00:00:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log1",
+      "userId": "user1",
+      "vaultId": "vault1",
+      "eventType": "check_in",
+      "timestamp": "2023-10-15T08:30:00Z",
+      "details": {
+        "method": "app"
+      }
+    },
+    {
+      "id": "log2",
+      "userId": "user1",
+      "vaultId": "vault1",
+      "itemId": "item1",
+      "eventType": "vault_created",
+      "timestamp": "2023-01-15T00:00:00Z"
+    }
+  ]
+}

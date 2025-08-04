@@ -1,7 +1,3 @@
-// types.ts
-
-// ---------- Enums ----------
-
 export type VaultStatus = 'active' | 'triggered' | 'archived';
 export type VaultItemType = 'plaintext' | 'encrypted';
 export type DeliveryStatus = 'pending' | 'delivered' | 'expired' | 'cancelled';
@@ -17,8 +13,6 @@ export type AuditEvent =
     | 'email_opened'
     | 'delivery_failed'
     | 'fallback_used';
-
-// ---------- Core Interfaces ----------
 
 export interface User {
     id: string;
