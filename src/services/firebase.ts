@@ -21,7 +21,7 @@ class FirebaseAuthService {
   // Sign in with email and password
   async signInWithEmailAndPassword(email: string, password: string): Promise<AuthUser> {
     // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise<void>(resolve => setTimeout(resolve, 1000));
 
     // Simulate successful login
     if (email && password) {
@@ -45,7 +45,7 @@ class FirebaseAuthService {
   // Create user with email and password
   async createUserWithEmailAndPassword(email: string, password: string): Promise<AuthUser> {
     // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise<void>(resolve => setTimeout(resolve, 1000));
 
     // Simulate successful registration
     if (email && password && password.length >= 6) {
@@ -70,7 +70,7 @@ class FirebaseAuthService {
   // Sign out
   async signOut(): Promise<void> {
     // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise<void>(resolve => setTimeout(resolve, 1000));
 
     this.currentUser = null;
 
