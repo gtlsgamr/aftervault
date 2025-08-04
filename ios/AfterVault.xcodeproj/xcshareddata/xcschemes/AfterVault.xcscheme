@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "untitled.app"
-               BlueprintName = "untitled"
-               ReferencedContainer = "container:untitled.xcodeproj">
+               BuildableName = "AfterVault.app"
+               BlueprintName = "AfterVault"
+               ReferencedContainer = "container:AfterVault.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "untitledTests.xctest"
-               BlueprintName = "untitledTests"
-               ReferencedContainer = "container:untitled.xcodeproj">
+               BuildableName = "AfterVaultTests.xctest"
+               BlueprintName = "AfterVaultTests"
+               ReferencedContainer = "container:AfterVault.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "untitled.app"
-            BlueprintName = "untitled"
-            ReferencedContainer = "container:untitled.xcodeproj">
+            BuildableName = "AfterVault.app"
+            BlueprintName = "AfterVault"
+            ReferencedContainer = "container:AfterVault.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "untitled.app"
-            BlueprintName = "untitled"
-            ReferencedContainer = "container:untitled.xcodeproj">
+            BuildableName = "AfterVault.app"
+            BlueprintName = "AfterVault"
+            ReferencedContainer = "container:AfterVault.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

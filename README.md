@@ -1,4 +1,79 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# AfterVault
+
+AfterVault is a secure vault for storing important information that will be shared with your trusted contacts if something happens to you.
+
+## Features
+
+- User authentication with Firebase
+- Onboarding flow
+- Secure storage of sensitive information
+- Automatic release of information to trusted contacts
+
+## Firebase Setup
+
+This app uses Firebase for authentication. Follow these steps to set up Firebase:
+
+1. Create a Firebase project at [https://console.firebase.google.com/](https://console.firebase.google.com/)
+2. Add an Android app and an iOS app to your Firebase project
+3. Install the required Firebase packages:
+
+```bash
+# Core Firebase packages
+npm install @react-native-firebase/app @react-native-firebase/auth
+
+# Google Sign-In
+npm install @react-native-google-signin/google-signin
+
+# Apple Sign-In (iOS only)
+npm install @invertase/react-native-apple-authentication
+
+# or using yarn
+yarn add @react-native-firebase/app @react-native-firebase/auth
+yarn add @react-native-google-signin/google-signin
+yarn add @invertase/react-native-apple-authentication
+```
+
+4. Configure Firebase for Android:
+   - Download the `google-services.json` file from the Firebase console
+   - Place it in the `android/app` directory
+   - Enable Google Sign-In in the Firebase console (Authentication > Sign-in method)
+   - Configure your app for Google Sign-In:
+     - In the Firebase console, go to Project settings > Your apps > Android app
+     - Add your SHA-1 and SHA-256 fingerprints (required for Google Sign-In)
+
+5. Configure Firebase for iOS:
+   - Download the `GoogleService-Info.plist` file from the Firebase console
+   - Place it in the `ios/AfterVault` directory
+   - Open your iOS project in Xcode and add the file to your project
+   - Enable Google Sign-In in the Firebase console (Authentication > Sign-in method)
+   - Enable Apple Sign-In in the Firebase console (Authentication > Sign-in method)
+   - Configure your app for Apple Sign-In:
+     - In Xcode, go to your project settings > Signing & Capabilities
+     - Add the "Sign in with Apple" capability
+     - Update your `Info.plist` to include the required entries for Google Sign-In
+
+6. Configure Phone Authentication:
+   - Enable Phone authentication in the Firebase console (Authentication > Sign-in method)
+   - For Android, add your app's SHA-1 fingerprint to the Firebase project
+   - For iOS, enable push notifications in your app capabilities
+
+7. Update the Firebase service implementation:
+   - Replace the simulated Firebase service in `src/services/firebase.ts` with the actual Firebase implementation (commented code at the bottom of the file)
+
+## Project Structure
+
+- `src/components`: Reusable UI components
+- `src/context`: Context providers (e.g., AuthContext)
+- `src/screens`: App screens organized by feature
+- `src/services`: Service implementations (e.g., Firebase)
+- `src/theme`: App theme configuration
+
+## Authentication Flow
+
+1. Onboarding screens introduce the app to new users
+2. Login/Signup screen allows users to authenticate
+3. After successful authentication, users are taken to the home screen
+4. Users can sign out from the home screen
 
 # Getting Started
 
