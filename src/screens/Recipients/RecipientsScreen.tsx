@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
     color: theme.colors.black,
   },
   addButton: {
-    backgroundColor: theme.colors.primary,
+    backgroundColor: theme.colors.black,
     paddingHorizontal: theme.spacing.medium,
     paddingVertical: theme.spacing.small,
     borderRadius: theme.layout.borderRadius,
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.lightGray,
   },
   selectedRecipientCard: {
-    borderColor: theme.colors.primary,
+    borderColor: theme.colors.black,
     borderWidth: 2,
   },
   recipientHeader: {

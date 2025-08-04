@@ -41,7 +41,7 @@ const MainNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarActiveTintColor: theme.colors.primary,
+        tabBarActiveTintColor: theme.colors.black,
         tabBarInactiveTintColor: theme.colors.darkGray,
         tabBarStyle: {
           backgroundColor: theme.colors.white,

@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.lightGray,
   },
   selectedVaultTab: {
-    backgroundColor: theme.colors.primary,
+    backgroundColor: theme.colors.black,
   },
   vaultTabText: {
     fontSize: theme.typography.fontSize.medium,

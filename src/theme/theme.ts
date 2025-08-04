@@ -18,6 +18,7 @@ export const typography = {
   },
   // Font sizes
   fontSize: {
+    xs: 10,
     small: 14,
     medium: 16,
     large: 18,

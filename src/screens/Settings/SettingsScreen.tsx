@@ -45,7 +45,7 @@ const SettingsScreen: React.FC = () => {
       <Switch
         value={value}
         onValueChange={onValueChange}
-        trackColor={{ false: theme.colors.lightGray, true: theme.colors.primary }}
+        trackColor={{ false: theme.colors.lightGray, true: theme.colors.black }}
         thumbColor={theme.colors.white}
       />
     </View>
@@ -291,7 +291,7 @@ const styles = StyleSheet.create({
     fontWeight: theme.typography.fontWeight.medium,
   },
   upgradeButton: {
-    backgroundColor: theme.colors.primary,
+    backgroundColor: theme.colors.black,
   },
   upgradeButtonText: {
     color: theme.colors.white,

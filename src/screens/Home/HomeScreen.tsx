@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
   summaryValue: {
     fontSize: theme.typography.fontSize.xlarge,
     fontWeight: theme.typography.fontWeight.bold,
-    color: theme.colors.primary,
+    color: theme.colors.black,
     marginBottom: theme.spacing.xs,
   },
   summaryLabel: {
