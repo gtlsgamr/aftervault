@@ -33,7 +33,7 @@ const createTabBarIcon = (name: string, label: string) => {
   };
 };
 
-// Create bottom tab navigator
+// Create a bottom tab navigator
 const Tab = createBottomTabNavigator();
 
 // Main app navigation with bottom tabs
@@ -92,7 +92,7 @@ const AppContent = () => {
   const [showOnboarding, setShowOnboarding] = useState(true);
   const { user } = useAuth();
 
-  // Handle navigation from onboarding to login
+  // Handle navigation from onboarding to log in
   const handleOnboardingComplete = () => {
     setShowOnboarding(false);
   };
